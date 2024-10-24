@@ -12,6 +12,8 @@ Vagrant.configure("2") do |config|
     
    venus.vm.provision "shell", inline: <<-SHELL
     cp /vagrant/confg/slave/named.conf.local /etc/bind/named.conf.local
+    cp /vagrant/named.conf.options /etc/bind/named.conf.options
+    cp /vagrant/named /etc/default/named
     systemctl restart bind9
    SHELL
 
@@ -32,6 +34,8 @@ Vagrant.configure("2") do |config|
       cp /vagrant/confg/master/named.conf.local /etc/bind/named.conf.local
       cp /vagrant/confg/master/db.sistema.test /etc/bind/db.sistema.test
       cp /vagrant/confg/master/db.192.168.57 /etc/bind/db.192.168.57
+      cp /vagrant/named.conf.options /etc/bind/named.conf.options
+      cp /vagrant/named /etc/default/named
       systemctl restart bind9
     SHELL
 
