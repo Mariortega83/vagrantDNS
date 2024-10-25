@@ -27,7 +27,7 @@ Este repositorio contiene la práctica de despliegue de aplicaciones web con con
 
    ![Configuración de named.conf.local en Venus](./images/venus-confg.png)
 
-7. Una vez que todos los archivos fueron editados correctamente, ajusté la provisión de cada VM para que copie los archivos a los directorios correspondientes, asegurando que el sistema sea replicable en otros entornos. Añadí varias líneas de código en los scripts de provisión para este propósito.
+7. Una vez que todos los archivos fueron editados correctamente, ajusté la provisión de cada VM para que copie los archivos a los directorios correspondientes, asegurando que el sistema sea replicable en otros entornos. 
 
     ![Configuracion maquinas](./images/vagrantfile-config.png)
 
